@@ -5,7 +5,8 @@ library(pheatmap)
 #update.packages(ask = FALSE)
 getwd()
 # Extract normalized counts from the dds object
-
+###Pattern Recognition: Heatmaps make it easy to spot patterns or relationships between variables (such as gene expression across different conditions).
+###Identifying Clusters: Clustering can help identify groups of genes or samples that behave similarly under different conditions.
 normalized_counts <- counts(dds1, normalized=TRUE)
 head(normalized_counts)
 #Step 3: filter out the DEGs genew from DESeq2 normalised result ;to include only these genes
